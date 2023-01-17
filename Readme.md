@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Калинина Ирина](https://up.htmlacademy.ru/htmlcss/36/user/2319345).
-* Наставник: `Неизвестно`.
+* Наставник: `Юлия Антонова (https://htmlacademy.ru/profile/talequale)`.
 
 ---
 
