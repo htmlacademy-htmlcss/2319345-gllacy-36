@@ -55,15 +55,15 @@
       </header>
       <section class="catalog-products">
         <h2 class="visually-hidden">Список товаров с фильтрами</h2>
-        <div class="sorting">
-          <label class="label-catalog label-text" for="sorting">Сортировка</label>
-          <select class="select-control" id="sorting">
-            <option value="popular">по популярности</option>
-            <option value="cheap">сначала дешёвое</option>
-            <option value="expensive">сначала дорогое</option>
-          </select>
-        </div>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+          <div class="catalog-filter-group">
+            <label class="catalog-filter-title label-text" for="sorting">Сортировка:</label>
+            <select class="select-control" id="sorting">
+              <option value="popular">по популярности</option>
+              <option value="cheap">сначала дешёвое</option>
+              <option value="expensive">сначала дорогое</option>
+            </select>
+          </div>
           <!-- строки 68-73 - временная разметка для input type="range"-->
           <div class="catalog-filter-group">
             <label class="catalog-filter-title label-text" for="cost">Цена:
