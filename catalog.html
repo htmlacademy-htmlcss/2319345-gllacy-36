@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Сливочное мороженое</title>
+  <link rel="stylesheet" href="assets/styles/styles.css">
 </head>
 <body>
   <div class="wrapper">
@@ -42,16 +44,16 @@
       <header class="catalog-header">
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="index.html">Главная</a>
+            <a class="breadcrumbs-link text-bold" href="index.html">Главная</a>
           </li>
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="#">Каталог</a>
+            <a class="breadcrumbs-link text-bold" href="#">Каталог</a>
           </li>
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link">Сливочное мороженое</a>
+            <a class="breadcrumbs-link current-link text-bold">Сливочное мороженое</a>
           </li>
         </ul>
-        <h1 class="catalog-heading head-text-big">Сливочное мороженое</h1>
+        <h1 class="catalog-heading head-text-big text-black">Сливочное мороженое</h1>
       </header>
       <section class="catalog-products">
         <h2 class="visually-hidden">Список товаров с фильтрами</h2>
@@ -122,20 +124,20 @@
                 </label>
               </li>
               <li class="catalog-filter-item">
-                <label class="catalog-label">
+                <label class="catalog-label label-text">
                   <input class="catalog-input" type="checkbox" name="syrups">
                   сиропы
                 </label>
               </li>
               <li class="catalog-filter-item">
-                <label class="catalog-label">
+                <label class="catalog-label label-text">
                   <input class="catalog-input" type="checkbox" name="jams">
                   джемы
                 </label>
               </li>
             </ul>
           </fieldset>
-          <button class="btn btn-primary" type="submit">Применить</button>
+          <button class="btn btn-tertiary label-text" type="submit">Применить</button>
         </form>
         <ul class="catalog-cards flex-container">
           <li class="card">
@@ -330,17 +332,17 @@
         <div class="footer-socials">
           <ul class="social-list">
             <li class="social-item">
-              <a class="btn" href="https://t.me/htmlacademy">
+              <a class="btn btn-icon btn-tg" href="https://t.me/htmlacademy">
                 <span class="visually-hidden">Телеграм</span>
               </a>
             </li>
             <li class="social-item">
-              <a class="btn" href="https://vk.com/htmlacademy">
+              <a class="btn btn-icon btn-vk" href="https://vk.com/htmlacademy">
                 <span class="visually-hidden">ВКонтакте</span>
               </a>
             </li>
             <li class="social-item">
-              <a class="btn" href="https://www.youtube.com/user/htmlacademyru">
+              <a class="btn btn-icon btn-tg" href="https://www.youtube.com/user/htmlacademyru">
                 <span class="visually-hidden">Ютуб</span>
               </a>
             </li>
@@ -356,7 +358,7 @@
           <a class="footer-logo" href="https://htmlacademy.ru/">
             <img src="assets/icons/logo-htmlacademy.svg" alt="Логотип HTML Academy.">
           </a>
-          <p class="label-text label-text-small">Сделано в <a class="html-academy" href="https://htmlacademy.ru/">.html academy</a> &#169; 2021</p>
+          <p class="label-text label-text-small">Сделано в <a class="html-academy-link" href="https://htmlacademy.ru/">.html academy</a> &#169; 2021</p>
         </div>
       </div>
     </footer>
