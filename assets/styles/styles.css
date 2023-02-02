@@ -65,7 +65,8 @@ img {
   text-decoration: none;
   line-height: 20px;
   font-weight: 700;
-  /* border: 0 0 4px rgba(252, 252, 252, 0.4); */
+  background-color: #FCFCFC;
+  margin: 0;
 }
 
 .btn-primary {
@@ -88,6 +89,7 @@ img {
 .btn-icon {
   background-position: center;
   background-repeat: no-repeat;
+  background-color: transparent;
 }
 
 .btn-tg {
@@ -102,8 +104,9 @@ img {
   background-image: url("../icons/socitem-yt.svg");
 }
 
-.link {
-  text-decoration: none;
+.btn-basket {
+  background-image: url("../icons/btn-basket.svg");
+  background-size: contain;
 }
 
 /* text (size & weight) */
@@ -161,7 +164,6 @@ img {
 /* header */
 .navigation-link {
   color: #2D3440; /* basic/extra-dark */
-  text-align: center;
   text-decoration: none;
 }
 
@@ -178,10 +180,17 @@ img {
 .gifts-item-marshmello {
   background-image: url("../images/bg-marshmello.png");
 }
-
+.gifts-heading {
+  text-align: center;
+}
 /* catalog (section) */
+.catalog-heading {
+  text-align: center;
+}
+
 .card {
   background-color: #FCFCFC; /* basic/extra-light */
+  text-align: center;
 }
 
 .card-description {
@@ -208,6 +217,10 @@ img {
   background-color: #ffffff;
   border-radius: 16px;
   padding: 56px 40px;
+}
+
+.advantages-heading {
+  text-align: center;
 }
 
 .advantages-description {
