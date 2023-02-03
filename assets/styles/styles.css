@@ -318,6 +318,9 @@ img {
 .breadcrumbs a.current-link {
   text-decoration: underline;
 }
+.catalog-header .catalog-heading {
+  text-align: start;
+}
 
 .pagination a {
   text-decoration: none;
