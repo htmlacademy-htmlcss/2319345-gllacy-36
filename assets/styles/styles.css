@@ -245,7 +245,7 @@ img {
 .gifts-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  margin: -30px -15px 0;
 }
 
 .gifts-item {
@@ -256,6 +256,7 @@ img {
   background-size: contain;
   border-radius: 16px;
   padding: 36px;
+  margin: 30px 15px 0;
 }
 
 .gifts-item-heading {
@@ -289,10 +290,9 @@ img {
 .catalog-cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 40px 30px;
   list-style: none;
-  margin: 0;
   padding: 0;
+  margin: -40px -15px 0;
 }
 
 .card {
@@ -301,6 +301,7 @@ img {
   text-align: center;
   border-radius: 8px;
   padding: 0 40px 24px;
+  margin: 40px 15px 0;
 }
 
 .card-description {
@@ -528,6 +529,7 @@ img {
   justify-content: flex-end;
   align-items: center;
   position: relative;
+  margin-bottom: 41px;
 }
 
 .catalog-controls .pagination {
