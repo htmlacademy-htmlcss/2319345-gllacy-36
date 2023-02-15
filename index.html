@@ -25,17 +25,17 @@
         </ul>
       </nav>
       <div class="navigation-user">
-        <div class="navigation-item">
-          <a class="navigation-link main-text-small text-bold" href="tel:+78005558628">+7 800 555-86-28</a>
+        <div class="navigation-user-item">
+          <a class="telephone navigation-user-link main-text-small text-bold" href="tel:+78005558628">+7 800 555-86-28</a>
         </div>
-        <div class="navigation-item">
-          <a class="navigation-link" href="#"><span class="visually-hidden">Поиск</span></a>
+        <div class="navigation-user-item">
+          <button class="navigation-user-link btn btn-icon btn-link"><span class="visually-hidden">Поиск</span></button>
         </div>
-        <div class="navigation-item">
-          <a class="navigation-link label-text" href="#">Вход<span class="visually-hidden">Личный кабинет</span></a>
+        <div class="navigation-user-item">
+          <a class="navigation-user-link label-text" href="#">Вход<span class="visually-hidden">Личный кабинет</span></a>
         </div>
-        <div class="navigation-item">
-          <a class="navigation-link label-text" href="#">2 товара<span class="visually-hidden">Корзина</span></a>
+        <div class="navigation-user-item">
+          <a class="navigation-user-link label-text" href="#">2 товара<span class="visually-hidden">Корзина</span></a>
         </div>
       </div>
     </header>
@@ -83,9 +83,9 @@
         </div>
         <div class="slider-footer">
           <ul class="pagination">
-            <li><button class="btn pagination-item pagination-item-active" type="button"></button></li>
-            <li><button class="btn pagination-item" type="button"></button></li>
-            <li><button class="btn pagination-item" type="button"></button></li>
+            <li class="pagination-item"><button class="btn btn-icon btn-pagination btn-pagination-active" type="button"></button></li>
+            <li class="pagination-item"><button class="btn btn-icon btn-pagination" type="button"></button></li>
+            <li class="pagination-item"><button class="btn btn-icon btn-pagination" type="button"></button></li>
           </ul>
           <div class="socials">
             <ul class="social-list">
@@ -146,7 +146,7 @@
               <h3 class="card-heading head-text-small text-bold">Малинка</h3>
             </a>
             <p class="card-description">Сливочное мороженое с малиновым джемом</p>
-            <div class="flex-container">
+            <div class="card-footer flex-container">
               <p class="card-price head-text-small text-bold">310 &#8381;/кг</p>
               <button class="btn btn-icon" type="button" aria-label="В корзину">
                 <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -164,7 +164,7 @@
               <h3 class="card-heading head-text-small text-bold">Фисташка</h3>
             </a>
             <p class="card-description">Фисташковый пломбир с кусочками шоколада</p>
-            <div class="flex-container">
+            <div class="card-footer flex-container">
               <p class="card-price head-text-small text-bold">340 &#8381;/кг</p>
               <button class="btn btn-icon" type="button" aria-label="В корзину">
                 <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -182,7 +182,7 @@
               <h3 class="card-heading head-text-small text-bold">Черника</h3>
             </a>
             <p class="card-description">Крем-брюле с&nbsp;черничным джемом</p>
-            <div class="flex-container">
+            <div class="card-footer flex-container">
               <p class="card-price head-text-small text-bold">330 &#8381;/кг</p>
               <button class="btn btn-icon" type="button" aria-label="В корзину">
                 <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -200,7 +200,7 @@
               <h3 class="card-heading head-text-small text-bold">Бабл-гам</h3>
             </a>
             <p class="card-description">Ванильный пломбир со&nbsp;сладкой посыпкой</p>
-            <div class="flex-container">
+            <div class="card-footer flex-container">
               <p class="card-price head-text-small text-bold">320 &#8381;/кг</p>
               <button class="btn btn-icon" type="button" aria-label="В корзину">
                 <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -259,7 +259,7 @@
             <p class="delivery-text">Хочется полакомиться любимым десертом, но&nbsp;нет времени съездить в магазин? Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
           </div>
           <div class="delivery-order">
-            <p class="delivery-order-label">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
+            <p class="delivery-order-label">Укажите адрес и дату доставки, и мы свяжемся с&nbsp;вами, чтобы подтвердить заказ.</p>
             <form class="delivery-form" action="https://echo.htmlacademy.ru/courses" method="post">
               <div class="flex-container">
                 <label class="main-label data-label main-text-small text-bold">Дата
@@ -282,11 +282,11 @@
         <div class="contacts-container">
           <div class="contacts-address">
             <p class="contacts-text">Адрес главного офиса и офлайн-магазина:</p>
-            <p class="head-text-small text-bold">наб. реки Карповки, 5 лит П, Санкт-Петербург</p>
+            <p class="contacts-heading head-text-small text-bold">наб. реки Карповки,<br>5 лит П, Санкт-Петербург</p>
           </div>
           <div class="contacts-phone">
             <p class="contacts-text">Для заказов по телефону:</p>
-            <a class="head-text-small text-bold" href="tel:+78128121212">+7 (812) 812-12-12</a>
+            <a class="contacts-heading head-text-small text-bold" href="tel:+78128121212">+7 (812) 812-12-12</a>
             <p class="contacts-text label-text">(с 10 до 20 ежедневно)</p>
           </div>
           <button class="btn btn-secondary" type="button">Форма обратной связи</button>
@@ -326,7 +326,7 @@
             </li>
           </ul>
         </div>
-        <ul class="footer-links flex-container">
+        <ul class="footer-links grid-container">
             <li class="links-item links-item-icon label-text text-bold"><a href="#">Для поставщиков</a></li>
             <li class="links-item label-text"><a href="#">Наши документы</a></li>
             <li class="links-item label-text"><a href="#">О производстве</a></li>
