@@ -55,12 +55,6 @@ img {
   margin: 0 auto;
 }
 
-.grid-container {
-  display: grid;
-  gap: 8px 24px;
-  grid-template-columns: 126px 182px;
-}
-
 .flex-container{
   display: flex;
   justify-content: space-between;
@@ -634,6 +628,9 @@ img {
 }
 .footer-links {
   align-self: flex-start;
+  display: grid;
+  gap: 8px 24px;
+  grid-template-columns: 126px 182px;
 }
 
 .footer-links a {
