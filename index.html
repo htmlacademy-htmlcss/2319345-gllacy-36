@@ -260,19 +260,20 @@
           </div>
           <div class="delivery-order">
             <p class="delivery-order-label">Укажите адрес и дату доставки, и мы свяжемся с&nbsp;вами, чтобы подтвердить заказ.</p>
-            <form class="delivery-form" action="https://echo.htmlacademy.ru/courses" method="post">
-              <div class="flex-container">
-                <label class="main-label data-label main-text-small text-bold">Дата
-                  <input class="main-input date-input" type="date" name="date">
-                </label>
-                <label class="main-label main-text-small text-bold">Телефон
-                  <input class="main-input tel-input" type="tel" name="tel" placeholder="+7 800 999-00-00">
-                </label>
-                <label class="main-label main-text-small text-bold">Адрес
-                  <input class="main-input address-input" type="text" name="address" placeholder="ул. Большая Конюшенная, 19/8">
-                </label>
-              </div>
-              <button class="btn btn-secondary" type="submit">Отправить</button>
+            <form class="delivery-form delivery-form-grid" action="https://echo.htmlacademy.ru/courses" method="post">
+              <p class="delivery-form-input date-input">
+                <label class="main-label data-label main-text-small text-bold" for="date">Дата</label>
+                <input class="main-input date-input" type="date" name="date" id="date">
+              </p>
+              <p class="delivery-form-input phone-input">
+                <label class="main-label main-text-small text-bold" for="phone">Телефон</label>
+                <input class="main-input tel-input" type="tel" name="tel" id="phone" placeholder="+7 800 999-00-00">
+              </p>
+              <p class="delivery-form-input address-input">
+                <label class="main-label main-text-small text-bold" for="address">Адрес</label>
+                <input class="main-input address-input" type="text" name="address" id="address" placeholder="ул. Большая Конюшенная, 19/8">
+              </p>
+              <button class="delivery-form-btn btn btn-secondary" type="submit">Отправить</button>
             </form>
           </div>
         </div>
@@ -326,7 +327,7 @@
             </li>
           </ul>
         </div>
-        <ul class="footer-links grid-container">
+        <ul class="footer-links">
             <li class="links-item links-item-icon label-text text-bold"><a href="#">Для поставщиков</a></li>
             <li class="links-item label-text"><a href="#">Наши документы</a></li>
             <li class="links-item label-text"><a href="#">О производстве</a></li>
@@ -336,7 +337,7 @@
           <a class="footer-logo" href="https://htmlacademy.ru/">
             <img src="assets/icons/logo-htmlacademy.svg" alt="Логотип HTML Academy.">
           </a>
-          <p class="label-text label-text-small">Сделано в <a class="html-academy-link" href="https://htmlacademy.ru/">.html academy</a> &#169; 2021</p>
+          <p class="copyright-text label-text label-text-small">Сделано в <a class="html-academy-link" href="https://htmlacademy.ru/">.html academy</a> &#169; 2021</p>
         </div>
       </div>
     </footer>
