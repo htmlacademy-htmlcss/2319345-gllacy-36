@@ -58,6 +58,7 @@ img {
 .flex-container{
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
 }
 
@@ -94,6 +95,7 @@ img {
   font-weight: 700;
   background-color: #FCFCFC;
   margin: 0;
+  transition: all 0.2s;
 }
 
 .btn-primary {
@@ -103,16 +105,84 @@ img {
   box-shadow: 0 0 0 4px rgba(252, 252, 252, 0.4);
 }
 
+.btn-primary:hover {
+  background-color: rgba(252, 252, 252, 0.4);
+  box-shadow: 0 0 0 4px #ffffff;
+}
+
+.btn-primary:active {
+  background-color: #FCFCFC;
+  box-shadow: 0 0 0 2px #2D3440;
+}
+
+.btn-primary:focus {
+  background-color: rgba(252, 252, 252, 0.5);
+  box-shadow: 0 0 0 2px #2D3440;
+  outline: none;
+}
+
+/*Здесь оставила .disabled, т.к. кнопки сделаны тегом <a>, и :disabled на случай, если на проекте появятся кнопки, сделанные через <button>*/
+.btn-primary:disabled, .btn-primary.disabled  {
+  pointer-events: none;
+  color: #B9B9B9;
+  background-color: #E7E7E7;
+  box-shadow: 0 0 0 4px rgba(252, 252, 252, 0.4);
+}
+
 .btn-secondary {
   color: #FCFCFC; /* basic/extra-light */
   background-color: #FF2F64 /* special/extra-bright*/;
   box-shadow: 0 0 0 4px rgba(255, 47, 100, 0.3);
 }
 
+.btn-secondary:hover {
+  color: #2D3440;
+  background-color: rgba(252, 252, 252, 0.3);
+  box-shadow: 0 0 0 4px #FF2F64;
+}
+
+.btn-secondary:active {
+  color: #FCFCFC;
+  background-color: #FEAFC3;
+  box-shadow: 0 0 0 2px #2D3440;
+}
+
+.btn-secondary:focus {
+  box-shadow: 0 0 0 2px #2D3440;
+  outline: none;
+}
+
+.btn-secondary:disabled, .btn-secondary.disabled {
+  pointer-events: none;
+  color: #2D3440;
+  background-color: #B9B9B9;
+  box-shadow: 0 0 0 4px rgba(185, 185, 185, 0.4);
+}
+
 .btn-tertiary {
   background-color: rgba(252, 252, 252, 0.3); /* basic/extra-light */
   border: 2px solid #FCFCFC;
   padding: 8px 32px;
+}
+
+.btn-tertiary:hover {
+  background-color: #FCFCFC; /* basic/extra-light */
+  border: 2px solid rgba(252, 252, 252, 0.3);
+}
+
+.btn-tertiary:active {
+  background-color: rgba(252, 252, 252, 0.5);
+  border: 2px solid rgba(252, 252, 252, 0.5);
+}
+
+.btn-tertiary:focus {
+  background-color: rgba(252, 252, 252, 0.3);
+  border: 2px solid #2D3440;
+  outline: none;
+}
+
+.btn-tertiary:disabled, .btn-tertiary.disabled {
+  opacity: 0.4;
 }
 
 .btn-icon {
@@ -124,16 +194,48 @@ img {
   background-color: transparent;
 }
 
+.btn-icon-sm {
+  width: 24px;
+  height: 24px;
+}
+
+.btn-icon-big {
+  width: 38px;
+  height: 38px;
+}
+
 .btn-link {
-  background-image: url("../icons/search.svg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
+  position: relative;
+}
+
+.btn-link svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
 }
 
 .btn-pagination {
   width: 12px;
   height: 12px;
   background-color: rgba(255, 255, 255, 0.3);
+  border: 1px solid transparent;
+}
+
+.btn-pagination:hover {
+  border: 1px solid #FCFCFC;
+}
+
+.btn-pagination:active {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid transparent;
+}
+
+.btn-pagination:focus {
+  border: 1px solid #2D3440;
+  outline: none;
 }
 
 .btn-pagination-active {
@@ -243,6 +345,54 @@ img {
   color: #2D3440; /* basic/extra-dark */
   text-decoration: none;
   padding: 8px 16px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.navigation-link:hover {
+  background-color: rgba(252, 252, 252, 0.5);
+}
+
+.navigation-link:active {
+  background-color: #FCFCFC; /* basic/extra-light */
+}
+
+.navigation-link:focus {
+  background-color: rgba(252, 252, 252, 0.5);
+  box-shadow: 0 0 0 2px #2D3440;
+  outline: none;
+}
+
+.navigation-link-catalog {
+  position: relative;
+  padding-right: 38px;
+}
+
+.navigation-link-catalog svg {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 18px;
+  transform: translateY(-30%);
+}
+
+.navigation-link-current {
+  background-color: #FF4A78;
+  color: #FCFCFC;
+}
+
+.navigation-link-current:hover {
+  opacity: 0.6;
+}
+
+.navigation-link-current:active {
+  opacity: 0.3;
+}
+
+.navigation-link-current:focus {
+  background-color: #FF4A78;
+  box-shadow: 0 0 0 2px #2D3440;
+  outline: none;
 }
 
 .navigation-user {
@@ -252,25 +402,130 @@ img {
   align-items: center;
 }
 
-.navigation-user-item:not(:first-child) {
-  margin-left: 16px;
-}
-
 .navigation-user-link {
   padding: 8px 16px;
   display: block;
   color: #2D3440; /* basic/extra-dark */
   text-decoration: none;
+  cursor: pointer;
 }
 
-.navigation-user-link.telephone {
-  padding: 8px 0;
+.navigation-link-login {
+  position: relative;
+  padding-left: 38px;
 }
+
+.navigation-link-login svg {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+}
+
+.navigation-link-basket {
+  position: relative;
+  padding-left: 38px;
+}
+
+.navigation-link-basket svg {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+}
+
+.navigation-user-link {
+  margin-left: 16px;
+  background-color: rgba(252, 252, 252, 0.3);
+  border-radius: 30px;
+}
+
+.telephone {
+  background-color: transparent;
+  border: none;
+  padding: 8px 0;
+  text-decoration: none;
+  display: block;
+  color: #2D3440; /* basic/extra-dark */
+  cursor: pointer;
+}
+
+.navigation-user-link:hover {
+  background-color: rgba(252, 252, 252, 0.5);
+}
+
+.navigation-user-link:active {
+  background-color: rgba(252, 252, 252, 0.5);
+  box-shadow: 0 0 0 2px #2D3440;
+}
+
+/*Проверяла как работает фокус в Сафари и Хроме, вроде с конструкцией ниже всё по макету*/
+/* Здесь не сработала директива supports, как она в теории прописана, может, синтаксис другой нужен */
+.navigation-user-link:focus, .telephone:focus {
+  background-color: #FCFCFC;
+  outline: none;
+}
+
+.navigation-user-link:focus:not(:focus-visible), .telephone:focus:not(:focus-visible) {
+  background-color: #FCFCFC;
+  outline: none;
+}
+
+.navigation-user-link:focus-visible, .telephone:focus-visible {
+  background-color: #FCFCFC;
+  outline: none;
+}
+
 
 /* slider */
+.slider-arrow {
+  padding: 0;
+  position: relative;
+  background-color: rgba(252, 252, 252, 0.3);
+  border: 2px solid #FCFCFC;
+}
+
+.slider-arrow svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #FCFCFC;
+}
+
 .slider-items {
   margin: 0;
   padding: 0;
+}
+
+.slider-arrow:hover {
+  background-color: #FCFCFC;
+}
+
+.slider-arrow:hover svg {
+  color: #2D3440;
+}
+
+.slider-arrow:active {
+  background-color: rgba(252, 252, 252, 0.5);
+  border: none;
+}
+
+.slider-arrow:focus {
+  background-color: rgba(252, 252, 252, 0.3);
+  border: 2px solid #2D3440;
+  outline: none;
+}
+
+.slider-arrow:focus svg {
+  color: #2D3440;
+}
+
+.slider-arrow:disabled {
+  pointer-events: none;
+  opacity: 0.4;
 }
 
 .slider-item {
@@ -314,14 +569,59 @@ img {
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.social-list a {
+  display: block;
 }
 
 .social-item:not(:first-child) {
-  margin-left: 12px;
+  margin-left: 10px;
+}
+
+.social-item a {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: 0 0 0 2px rgba(252, 252, 252, 0.3);
 }
 
 .social-item svg {
   display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #FCFCFC;
+}
+
+.social-item a:hover {
+  background-color: #2D3440;
+}
+
+.social-item a:active {
+  opacity: 0.5;
+}
+
+.social-item a:focus {
+  box-shadow: 0 0 0 2px #2D3440;
+  background-color: #2D3440;
+  outline: none;
+}
+
+.social-item a:focus:not(:focus-visible) {
+  box-shadow: 0 0 0 2px #2D3440;
+  background-color: #2D3440;
+  outline: none;
+}
+
+.social-item a:focus-visible {
+  box-shadow: 0 0 0 2px #2D3440;
+  background-color: #2D3440;
+  outline: none;
 }
 
   /* gifts */
@@ -421,6 +721,52 @@ img {
   padding: 0 40px 24px;
 }
 
+.btn-cart {
+  background-color: #FF2F64;
+  position: relative;
+}
+
+.btn-cart svg {
+  color: #FCFCFC;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn-cart:hover {
+  background-color: rgba(252, 252, 252, 0.3);
+  border: 2px solid #FF2F64;
+}
+
+.btn-cart:hover svg {
+  color: #2D3440;
+}
+
+.btn-cart:active {
+  background-color: rgba(255, 203, 216, 1);
+  border: 2px solid #FF2F64;
+}
+
+.btn-cart:active svg {
+  color: #2D3440;
+}
+
+.btn-cart:focus {
+  border: 2px solid #2D3440;
+  outline: none;
+}
+
+.btn-cart:disabled {
+  pointer-events: none;
+  background-color: #B9B9B9;
+}
+
+.btn-cart:disabled svg {
+  pointer-events: none;
+  color: #565C66;
+}
+
 /* advantages */
 .advantages {
   background-color: #ffffff;
@@ -445,6 +791,35 @@ img {
 .advantages-item {
   width: 505px;
   margin: 0 0 40px 0;
+  position: relative;
+  padding-left: 64px;
+}
+
+.advantages-item::before {
+  width: 48px;
+  height: 48px;
+  content: "";
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.advantages-item.production::before {
+  background-image: url("../icons/advantages-production.svg");
+}
+
+.advantages-item.ingredients::before {
+  background-image: url("../icons/advantages-ingredients.svg");
+}
+
+.advantages-item.quality::before {
+  background-image: url("../icons/advantages-quality.svg");
+}
+
+.advantages-item.temperature::before {
+  background-image: url("../icons/advantages-temperature.svg");
 }
 
 .advantages-heading {
@@ -513,6 +888,7 @@ img {
 .delivery .flex-container {
   align-items: center;
 }
+
 .delivery {
   background-color: #FCFCFC;/* basic/extra-light */
   background-image: url("../images/bg-delivery.png");
@@ -537,9 +913,6 @@ img {
   background-color: #FCFCFC; /* basic/extra-light */
   padding: 40px;
 }
-.delivery-form p {
-  margin: 0;
-}
 
 .delivery-form-grid {
   display: grid;
@@ -552,20 +925,15 @@ img {
   flex-direction: column;
 }
 
-.delivery-form-input label {
-  margin-bottom: 8px;
-}
-
 .phone-input {
   grid-column: 2 / 3;
 }
 
-.address-input {
-  grid-column: 1 / 3;
+.full-width-column {
+  grid-column: 1 / -1;
 }
 
 .delivery-form-btn {
-  grid-column: 1 / 3;
   justify-self: center;
   margin-top: 12px;
 }
@@ -577,6 +945,44 @@ img {
 .delivery-order-label {
   color: #565C66; /* basic/dark */
   margin: 0 0 32px 0;
+}
+
+.delivery-form-label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.data-label, .address-label {
+  margin-right: 4px;
+}
+
+.btn-tooltip {
+  width: 14px;
+  height: 14px;
+  background-image: url("../icons/form-tooltip.svg");
+  background-position: 50% 50%;
+  cursor: pointer;
+}
+
+.btn-tooltip:hover {
+  opacity: 0.6;
+}
+
+.btn-tooltip:active {
+  opacity: 0.3;
+}
+
+.btn-tooltip:focus {
+ outline: none;
+}
+
+.btn-tooltip:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.btn-tooltip:focus-visible {
+  outline: none;
 }
 
 /* contacts */
@@ -609,16 +1015,27 @@ img {
 .contacts-phone {
   margin-bottom: 32px;
 }
+
 .contacts-phone a {
   text-decoration: none;
   color: #2D3440; /* basic/extra-dark */
 }
+
 .contacts-address {
   margin-bottom: 24px;
 }
+
 /* footer */
 .footer {
   padding: 48px 0;
+}
+
+.catalog-footer {
+  border-top: 1px solid rgba(252, 252, 252, 0.3);
+}
+
+.footer .flex-container {
+  align-items: flex-start;
 }
 
 .footer ul {
@@ -626,16 +1043,36 @@ img {
   margin: 0;
   padding: 0;
 }
+
 .footer-links {
   align-self: flex-start;
   display: grid;
   gap: 8px 24px;
-  grid-template-columns: 126px 182px;
+  grid-template-columns: 150px 182px;
 }
 
 .footer-links a {
   text-decoration: none;
   color: #2D3440; /* basic/extra-dark */
+}
+
+.footer-links li:nth-child(odd) {
+  padding-left: 24px;
+}
+
+.links-item-icon {
+  position: relative;
+}
+
+.links-item-icon::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-image: url("../icons/heart-fill.svg");
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
 }
 
 .footer-logo {
@@ -659,6 +1096,7 @@ img {
 .catalog-header {
   margin-bottom: 32px;
 }
+
 .breadcrumbs {
   list-style: none;
   margin: 0 0 16px 0;
@@ -667,9 +1105,26 @@ img {
   flex-wrap: wrap;
 }
 
-.breadcrumbs-item:not(:last-child) {
-  margin-right: 28px;
+.breadcrumbs-item {
+  padding-right: 20px;
+  position: relative;
 }
+
+.breadcrumbs-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.breadcrumbs-item:not(:last-child)::after {
+  content: '';
+  width: 12px;
+  height: 12px;
+  background-image: url("../icons/chevrons-right.svg");
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
 .breadcrumbs a {
   text-decoration: none;
   color: #2D3440; /* basic/extra-dark */
@@ -678,9 +1133,11 @@ img {
 .breadcrumbs a.current-link {
   text-decoration: underline;
 }
+
 .catalog-filter {
   margin-bottom: 44px;
 }
+
 .main-catalog .catalog-heading {
   margin: 0 0 40px 0;
   text-align: start;
@@ -695,6 +1152,73 @@ img {
   color: #2D3440; /* basic/extra-dark */
 }
 
+.catalog-pagination-item {
+  width: 24px;
+  position: relative;
+}
+
+/* Здесь беспокоит, что у li с цифрой "1" сбита центровка, он не посередине псевдоэлемента находится, непонятно, почему */
+.catalog-pagination-item::before {
+  content: '';
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: transparent;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.catalog-pagination-item:hover::before {
+  background-color: rgba(252, 252, 252, 0.5);
+}
+
+.catalog-pagination-item:active::before {
+  background-color: rgba(252, 252, 252, 0.5);
+  border: 1px solid #FCFCFC;
+}
+
+.catalog-pagination-item:focus::before {
+  background-color: rgba(252, 252, 252, 0.3);
+  border: 1px solid #2D3440;
+  outline: none;
+}
+
+.catalog-pagination-item.pagination-current::before {
+  background-color: rgba(252, 252, 252, 1);
+}
+
+.pagination-prev::after {
+  content: '';
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-image: url("../icons/arrow-prev.svg");
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pagination-next::after {
+  content: '';
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-image: url("../icons/arrow-next.svg");
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pagination-disabled {
+  pointer-events: none;
+  opacity: 0.3;
+}
+
 .main-catalog {
   flex-grow: 1;
 }
@@ -706,14 +1230,16 @@ img {
 }
 
 .catalog-controls {
-  display: flex;
-  justify-content: flex-end;
+  display: grid;
+  grid-template-columns: 1fr 179px 1fr;
   align-items: center;
   position: relative;
   margin-bottom: 81px;
 }
 
 .catalog-pagination {
+  grid-column: 3 / 4;
+  justify-self: flex-end;
   display: flex;
   list-style: none;
 }
