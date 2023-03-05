@@ -1645,10 +1645,11 @@ img {
   display: none;
 }
 
-/*popover basket*/
+/*popover*/
 .navigation-user-item {
   position: relative;
 }
+
 .popover {
   width: 441px;
   padding: 48px;
@@ -1731,7 +1732,6 @@ img {
 .basket-item-text {
   display: flex;
   flex-direction: column;
-
 }
 
 .basket-item-name {
@@ -1888,8 +1888,7 @@ img {
   left: 16px;
 }
 
-
-
+/*slider*/
 .slider-content {
   position: relative;
 }
@@ -1992,6 +1991,7 @@ img {
   transform: translateY(-50%);
 }
 
+/*tooltip*/
 .tooltip {
   position: relative;
 }
