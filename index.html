@@ -19,6 +19,17 @@
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M1.80812 0.195262C1.54777 -0.0650874 1.12566 -0.0650874 0.865306 0.195262C0.604957 0.455612 0.604957 0.877722 0.865306 1.13807L5.52565 5.79842C5.52771 5.80053 5.52979 5.80264 5.53189 5.80474C5.66259 5.93543 5.83404 6.00052 6.00534 6C6.1753 5.9995 6.34511 5.93441 6.47478 5.80474C6.47687 5.80265 6.47894 5.80056 6.48099 5.79845L11.1414 1.13807C11.4017 0.877722 11.4017 0.455612 11.1414 0.195262C10.881 -0.0650874 10.4589 -0.0650874 10.1986 0.195262L6.00334 4.39048L1.80812 0.195262Z" fill="currentColor"/>
               </svg>
             </a>
+            <div class="popover popover-submenu">
+              <div class="popover-content">
+                <ul class="submenu-list">
+                  <li><a class="submenu-item submenu-item-new label-text text-bold" href="#">Новинки</a></li>
+                  <li><a class="submenu-item label-text" href="#">Сливочное</a></li>
+                  <li><a class="submenu-item label-text" href="#">Щербеты</a></li>
+                  <li><a class="submenu-item label-text" href="#">фруктовый лед</a></li>
+                  <li><a class="submenu-item label-text" href="#">Мелорин</a></li>
+                </ul>
+              </div>
+            </div>
           </li>
           <li class="navigation-item">
             <a class="navigation-link  main-text-small" href="#">Доставка и оплата</a>
@@ -33,25 +44,95 @@
           <a class="telephone main-text-small text-bold" href="tel:+78005558628">+7 800 555-86-28</a>
         </div>
         <div class="navigation-user-item">
-          <button class="navigation-user-link btn btn-icon btn-link"><span class="visually-hidden">Поиск</span>
+          <button class="navigation-user-link btn btn-icon btn-link popover-button" type="submit"><span class="visually-hidden">Поиск</span>
             <svg aria-hidden="true" focusable="false" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M2.66329 8.18794C2.66329 5.61061 4.75263 3.52128 7.32996 3.52128C9.90729 3.52128 11.9966 5.61061 11.9966 8.18794C11.9966 9.44522 11.4994 10.5864 10.6909 11.4255C10.6681 11.443 10.6461 11.4623 10.6252 11.4832C10.6043 11.5041 10.585 11.5261 10.5675 11.5489C9.72835 12.3574 8.58722 12.8546 7.32996 12.8546C4.75263 12.8546 2.66329 10.7653 2.66329 8.18794ZM11.0751 12.8759C10.0486 13.697 8.74662 14.1879 7.32996 14.1879C4.01625 14.1879 1.32996 11.5017 1.32996 8.18794C1.32996 4.87423 4.01625 2.18794 7.32996 2.18794C10.6437 2.18794 13.33 4.87423 13.33 8.18794C13.33 9.60463 12.839 10.9066 12.0179 11.9331L14.468 14.3832C14.7284 14.6436 14.7284 15.0657 14.468 15.326C14.2077 15.5864 13.7855 15.5864 13.5252 15.326L11.0751 12.8759Z" fill="currentColor"/>
             </svg>
           </button>
+          <div class="popover popover-search">
+            <div class="popover-content">
+              <form action="https://echo.htmlacademy.ru/courses" method="get">
+                <p class="search-form-item">
+                  <label class="visually-hidden" for="search">Поиск по сайту</label>
+                  <input class="search-input main-input" type="text" name="search" id="search" placeholder="Поиск по сайту">
+                  <button class="btn btn-icon btn-delete-text" type="button"></button>
+                </p>
+              </form>
+            </div>
+          </div>
         </div>
         <div class="navigation-user-item">
-          <a class="navigation-user-link navigation-link-login label-text" href="#">
+          <a class="navigation-user-link navigation-link-login label-text popover-button" href="#">
             <svg aria-hidden="true" focusable="false" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M9 2.52461C9 2.15642 9.29848 1.85794 9.66667 1.85794H12.3333C12.8638 1.85794 13.3725 2.06865 13.7475 2.44373C14.1226 2.8188 14.3333 3.32751 14.3333 3.85794V13.1913C14.3333 13.7217 14.1226 14.2304 13.7475 14.6055C13.3725 14.9806 12.8638 15.1913 12.3333 15.1913H9.66667C9.29848 15.1913 9 14.8928 9 14.5246C9 14.1564 9.29848 13.8579 9.66667 13.8579H12.3333C12.5101 13.8579 12.6797 13.7877 12.8047 13.6627C12.9298 13.5377 13 13.3681 13 13.1913V3.85794C13 3.68113 12.9298 3.51156 12.8047 3.38654C12.6797 3.26151 12.5101 3.19127 12.3333 3.19127H9.66667C9.29848 3.19127 9 2.8928 9 2.52461ZM5.86189 4.71987C6.12224 4.45952 6.54435 4.45952 6.8047 4.71987L10.1338 8.04897C10.1509 8.06579 10.1671 8.08353 10.1824 8.1021C10.2142 8.1409 10.2411 8.18246 10.2628 8.22589C10.3079 8.31575 10.3333 8.41721 10.3333 8.52461C10.3333 8.63323 10.3074 8.73579 10.2613 8.8264C10.241 8.86635 10.2164 8.90469 10.1876 8.94072C10.1708 8.96172 10.1527 8.98169 10.1335 9.0005L6.8047 12.3293C6.54435 12.5897 6.12224 12.5897 5.86189 12.3293C5.60154 12.069 5.60154 11.6469 5.86189 11.3865L8.05715 9.19127H1.66667C1.29848 9.19127 1 8.8928 1 8.52461C1 8.15642 1.29848 7.85794 1.66667 7.85794H8.05715L5.86189 5.66268C5.60154 5.40233 5.60154 4.98022 5.86189 4.71987Z" fill="currentColor"/>
             </svg>
             Вход<span class="visually-hidden">Личный кабинет</span></a>
+          <div class="popover popover-login">
+            <div class="popover-content">
+              <h2 class="popover-title head-text-medium">Личный кабинет</h2>
+              <form  action="https://echo.htmlacademy.ru/courses" method="post">
+                <p class="login-form-item">
+                  <label class="visually-hidden" for="email-login">Электронная почта</label>
+                  <input class="main-input" type="email" name="email" id="email-login" placeholder="email@example.com">
+                </p>
+                <p class="login-form-item">
+                  <label class="visually-hidden" for="password">Пароль</label>
+                  <input class="main-input" type="password" name="password" id="password" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;">
+                </p>
+                <div class="login-form-footer">
+                  <button class="btn-login btn btn-secondary" type="submit">Войти</button>
+                  <div class="login-links">
+                    <a class="login-link label-text" href="#">Забыли пароль?</a>
+                    <a class="login-link label-text" href="#">Регистрация</a>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
         <div class="navigation-user-item">
-          <a class="navigation-user-link navigation-link-basket label-text" href="#">
+          <a class="navigation-user-link navigation-link-basket label-text popover-button" href="#">
             <svg aria-hidden="true" focusable="false" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M1.16667 2.10794C0.798477 2.10794 0.5 2.40642 0.5 2.77461C0.5 3.1428 0.798477 3.44127 1.16667 3.44127H2.93794L3.40537 5.77666C3.40821 5.79461 3.41176 5.81232 3.416 5.82976L4.38338 10.6631L4.3835 10.6637C4.46706 11.0837 4.69562 11.4609 5.02921 11.7295C5.36111 11.9967 5.77595 12.1393 6.20183 12.1328H11.8225C12.2484 12.1393 12.6633 11.9967 12.9952 11.7295C13.3289 11.4608 13.5575 11.0833 13.641 10.6631L13.641 10.6631L13.642 10.6581L14.5691 5.79666C14.6063 5.60149 14.5545 5.39989 14.4279 5.24681C14.3012 5.09372 14.1129 5.00511 13.9142 5.00511H4.61072L4.1381 2.64377C4.07574 2.3322 3.80215 2.10794 3.4844 2.10794H1.16667ZM5.69098 10.4024L4.87759 6.33844H13.1084L12.3328 10.4053C12.31 10.5178 12.2485 10.6188 12.1591 10.6909C12.0691 10.7633 11.9565 10.8018 11.841 10.7996L11.841 10.7994H11.8282H6.19614V10.7993L6.18337 10.7996C6.06787 10.8018 5.95528 10.7633 5.8653 10.6909C5.77531 10.6184 5.71368 10.5166 5.69117 10.4033L5.69098 10.4024ZM4.55739 14.3634C4.55739 13.6754 5.1151 13.1177 5.80307 13.1177C6.49105 13.1177 7.04876 13.6754 7.04876 14.3634C7.04876 15.0513 6.49105 15.6091 5.80307 15.6091C5.1151 15.6091 4.55739 15.0513 4.55739 14.3634ZM10.9307 14.3634C10.9307 13.6754 11.4884 13.1177 12.1764 13.1177C12.8644 13.1177 13.4221 13.6754 13.4221 14.3634C13.4221 15.0513 12.8644 15.6091 12.1764 15.6091C11.4884 15.6091 10.9307 15.0513 10.9307 14.3634Z" fill="currentColor"/>
             </svg>
             2 товара<span class="visually-hidden">Корзина</span></a>
+          <div class="popover popover-basket">
+            <div class="popover-content">
+              <h2 class="popover-title head-text-medium">Корзина</h2>
+              <ul class="basket-product-list">
+                <li class="basket-item basket-grid-container">
+                  <div class="basket-item-product">
+                    <a class="basket-item-image" href="#">
+                      <img src="assets/images/basket-raspberry.png" alt="Малинка.">
+                    </a>
+                    <div class="basket-item-text">
+                      <a class="basket-item-name text-bold head-text-xs" href="#">Малинка</a>
+                      <p class="basket-item-details text-label">1 кг х 310 ₽</p>
+                    </div>
+                  </div>
+                  <p class="basket-item-price text-bold">310 &#8381;</p>
+                  <button class="btn btn-icon btn-delete-item" type="button"></button>
+                </li>
+                <li class="basket-item basket-grid-container">
+                  <div class="basket-item-product">
+                    <a class="basket-item-image" href="#">
+                      <img src="assets/images/basket-bubblegum.png" alt="Бабл-гам.">
+                    </a>
+                    <div class="basket-item-text">
+                      <a class="basket-item-name text-bold head-text-xs" href="#">Бабл-гам</a>
+                      <p class="basket-item-details text-label">1,5 кг х 320 ₽</p>
+                    </div>
+                  </div>
+                  <p class="basket-item-price text-bold">480 &#8381;</p>
+                  <button class="btn btn-icon btn-delete-item" type="button"></button>
+                </li>
+              </ul>
+              <div class="basket-footer">
+                <a class="basket-link btn btn-secondary" href="#">Оформить заказ</a>
+                <p class="basket-total-price head-text-xs text-bold">Итого: 790  &#8381;</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </header>
@@ -59,50 +140,52 @@
       <h1 class="visually-hidden">Магазин мороженого Глейси</h1>
       <section class="section-index slider">
         <h2 class="visually-hidden">Виды мороженого</h2>
-        <ul class="slider-items">
-          <li class="slider-item js-slide active">
-            <div class="slider-item-description">
-              <h3 class="slider-item-heading head-text-extra text-black">Нежный пломбир с&nbsp;клубничным джемом</h3>
-              <p class="slider-item-text main-text-big">Натуральное мороженое из&nbsp;свежих сливок и&nbsp;молока с&nbsp;вкуснейшим клубничным джемом&nbsp;&mdash; это идеальный десерт для всей семьи.</p>
-              <a href="#" class="btn btn-primary">Заказать</a>
+        <div class="slider-content">
+          <ul class="slider-items">
+            <li class="slider-item js-slide active">
+              <div class="slider-item-description">
+                <h3 class="slider-item-heading head-text-extra text-black">Нежный пломбир с&nbsp;клубничным джемом</h3>
+                <p class="slider-item-text main-text-big">Натуральное мороженое из&nbsp;свежих сливок и&nbsp;молока с&nbsp;вкуснейшим клубничным джемом&nbsp;&mdash; это идеальный десерт для всей семьи.</p>
+                <a href="#" class="btn btn-primary">Заказать</a>
+              </div>
+              <div class="slider-item-image">
+                <img src="assets/images/icecream-1.png" width="328" height="507" alt="">
+              </div>
+            </li>
+            <li class="slider-item js-slide">
+              <div class="slider-item-description">
+                <h3 class="slider-item-heading head-text-extra text-black">Сливочное мороженое со&nbsp;вкусом банана</h3>
+                <p class="slider-item-text main-text-big">Сливочное мороженое с&nbsp;ярким банановым вкусом подарит вам свежесть и&nbsp;наслаждение даже в&nbsp;самый жаркий летний день.</p>
+                <a href="#" class="btn btn-primary">Заказать</a>
+              </div>
+              <div class="slider-item-image">
+                <img src="assets/images/icecream-2.png" width="66" height="150" alt="">
+              </div>
+            </li>
+            <li class="slider-item js-slide">
+              <div class="slider-item-description">
+                <h3 class="slider-item-heading head-text-extra text-black">Карамельный пломбир с&nbsp;маршмеллоу</h3>
+                <p class="slider-item-text main-text-big">Необычный сладкий десерт с&nbsp;карамельным топпингом и&nbsp;кусочками зефира завоюет сердца сладкоежек всех возрастов.</p>
+                <a href="#" class="btn btn-primary">Заказать</a>
+              </div>
+              <div class="slider-item-image">
+                <img src="assets/images/icecream-3.png" width="66" height="150" alt="">
+              </div>
+            </li>
+          </ul>
+          <div class="slider-controls">
+            <div class="slider-arrows">
+              <button class="btn btn-icon-big slider-arrow prev js-toggle" type="button" aria-label="Перейти к предыдущему слайду">
+                <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.8033 3.80515C10.063 3.54545 10.063 3.12439 9.8033 2.8647C9.54361 2.605 9.12255 2.605 8.86285 2.8647L4.19477 7.53277C3.93593 7.79162 3.93508 8.21075 4.19221 8.47065C4.19338 8.47183 4.19454 8.47301 4.19572 8.47418L8.8638 13.1423C9.12349 13.402 9.54455 13.402 9.80425 13.1423C10.0639 12.8826 10.0639 12.4615 9.80425 12.2018L5.60545 8.00301L9.8033 3.80515Z" fill="currentColor"/>
+                </svg>
+              </button>
+              <button class="btn btn-icon-big slider-arrow next js-toggle" type="button" aria-label="Перейти к следующему слайду">
+                <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M7.13526 2.8647C6.87557 2.605 6.45451 2.605 6.19481 2.8647C5.93511 3.12439 5.93511 3.54545 6.19481 3.80515L10.3961 8.00643L6.19477 12.2077C5.93508 12.4674 5.93508 12.8885 6.19477 13.1482C6.45447 13.4079 6.87553 13.4079 7.13523 13.1482L11.804 8.47944C11.8049 8.47852 11.8058 8.47759 11.8068 8.47666C12.0665 8.21696 12.0665 7.79591 11.8068 7.53621L7.13526 2.8647Z" fill="currentColor"/>
+                </svg>
+              </button>
             </div>
-            <div class="slider-item-image">
-              <img src="assets/images/icecream-1.png" width="329" height="507" alt="">
-            </div>
-          </li>
-          <li class="slider-item js-slide">
-            <div class="slider-item-description">
-              <h3 class="slider-item-heading head-text-extra text-black">Сливочное мороженое со&nbsp;вкусом банана</h3>
-              <p class="slider-item-text main-text-big">Сливочное мороженое с&nbsp;ярким банановым вкусом подарит вам свежесть и&nbsp;наслаждение даже в&nbsp;самый жаркий летний день.</p>
-              <a href="#" class="btn btn-primary">Заказать</a>
-            </div>
-            <div class="slider-item-image">
-              <img src="assets/images/icecream-2.png" width="66" height="150" alt="">
-            </div>
-          </li>
-          <li class="slider-item js-slide">
-            <div class="slider-item-description">
-              <h3 class="slider-item-heading head-text-extra text-black">Карамельный пломбир с&nbsp;маршмеллоу</h3>
-              <p class="slider-item-text main-text-big">Необычный сладкий десерт с&nbsp;карамельным топпингом и&nbsp;кусочками зефира завоюет сердца сладкоежек всех возрастов.</p>
-              <a href="#" class="btn btn-primary">Заказать</a>
-            </div>
-            <div class="slider-item-image">
-              <img src="assets/images/icecream-3.png" width="66" height="150" alt="">
-            </div>
-          </li>
-        </ul>
-        <div class="slider-controls">
-          <div class="slider-arrows">
-            <button class="btn btn-icon-big slider-arrow prev js-toggle" type="button" aria-label="Перейти к предыдущему слайду">
-              <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.8033 3.80515C10.063 3.54545 10.063 3.12439 9.8033 2.8647C9.54361 2.605 9.12255 2.605 8.86285 2.8647L4.19477 7.53277C3.93593 7.79162 3.93508 8.21075 4.19221 8.47065C4.19338 8.47183 4.19454 8.47301 4.19572 8.47418L8.8638 13.1423C9.12349 13.402 9.54455 13.402 9.80425 13.1423C10.0639 12.8826 10.0639 12.4615 9.80425 12.2018L5.60545 8.00301L9.8033 3.80515Z" fill="currentColor"/>
-              </svg>
-            </button>
-            <button class="btn btn-icon-big slider-arrow next js-toggle" type="button" aria-label="Перейти к следующему слайду">
-              <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.13526 2.8647C6.87557 2.605 6.45451 2.605 6.19481 2.8647C5.93511 3.12439 5.93511 3.54545 6.19481 3.80515L10.3961 8.00643L6.19477 12.2077C5.93508 12.4674 5.93508 12.8885 6.19477 13.1482C6.45447 13.4079 6.87553 13.4079 7.13523 13.1482L11.804 8.47944C11.8049 8.47852 11.8058 8.47759 11.8068 8.47666C12.0665 8.21696 12.0665 7.79591 11.8068 7.53621L7.13526 2.8647Z" fill="currentColor"/>
-              </svg>
-            </button>
           </div>
         </div>
         <div class="slider-footer">
@@ -260,9 +343,11 @@
           <div class="subscribe info-item">
             <div class="subscribe-inner">
               <p class="subscribe-text">Подпишитесь на нашу сладкую рассылку и будьте всегда в&nbsp;курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-              <form class="subscribe-form flex-container" action="https://echo.htmlacademy.ru/courses" method="post">
-                <label class="visually-hidden" for="email">Электронная почта:</label>
-                <input class="main-input" type="email" name="email" id="email" placeholder="email@example.com">
+              <form class="subscribe-form" action="https://echo.htmlacademy.ru/courses" method="post">
+                <p class="subscribe-form-item">
+                  <label class="visually-hidden" for="email">Электронная почта</label>
+                  <input class="main-input" type="email" name="email" id="email" placeholder="email@example.com">
+                </p>
                 <button class="btn btn-secondary" type="submit">Отправить</button>
               </form>
             </div>
@@ -281,9 +366,12 @@
               <div class="delivery-form-input date-input">
                 <div class="delivery-form-label">
                   <label class="main-label data-label main-text-small text-bold" for="date">Дата</label>
-                  <button class="btn btn-icon btn-tooltip"></button>
+                  <div class="tooltip">
+                    <button class="btn btn-icon btn-tooltip" aria-labelledby="tooltip-label-date" type="button"></button>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Введите желаемую дату доставки</span>
+                  </div>
                 </div>
-                <input class="main-input date-input" type="date" name="date" id="date">
+                <input class="main-input date-input" type="text" name="date" id="date" placeholder="01.04.2020">
               </div>
               <div class="delivery-form-input phone-input">
                 <div class="delivery-form-label">
@@ -294,7 +382,10 @@
               <div class="delivery-form-input full-width-column">
                 <div class="delivery-form-label">
                   <label class="main-label address-label main-text-small text-bold" for="address">Адрес</label>
-                  <button class="btn btn-icon btn-tooltip"></button>
+                  <div class="tooltip">
+                    <button class="btn btn-icon btn-tooltip" aria-labelledby="tooltip-label-address" type="button"></button>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label-address">Введите название улицы, дома и квартиры</span>
+                  </div>
                 </div>
                 <input class="main-input address-input" type="text" name="address" id="address" placeholder="ул. Большая Конюшенная, 19/8">
               </div>
@@ -363,5 +454,30 @@
         </div>
       </div>
     </footer>
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-feedback">
+        <button class="btn btn-icon modal-close-button" type="button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title head-text-medium text-bold">Мы обязательно ответим вам!</h2>
+          <form class="feedback-form" action="https://echo.htmlacademy.ru/courses" method="post">
+            <div class="feedback-form-item">
+              <label class="visually-hidden" for="name">Имя и фамилия</label>
+              <input class="main-input" type="text" name="name" id="name" placeholder="Имя и фамилия">
+            </div>
+            <div class="feedback-form-item">
+              <label class="visually-hidden" for="email-feedback">Электронная почта</label>
+              <input class="main-input" type="email" name="email-feedback" id="email-feedback" placeholder="email@example.com">
+            </div>
+            <div class="feedback-form-item">
+              <label for="message" class="visually-hidden">Отзыв</label>
+              <textarea class="main-input" name="message" placeholder="В свободной форме" id="message"></textarea>
+            </div>
+            <button class="btn btn-secondary" type="submit">Отправить</button>
+          </form>
+        </section>
+      </div>
+    </div>
   </body>
 </html>
