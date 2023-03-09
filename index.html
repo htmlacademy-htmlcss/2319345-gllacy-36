@@ -56,7 +56,7 @@
                 <p class="search-form-item">
                   <label class="visually-hidden" for="search">Поиск по сайту</label>
                   <input class="search-input main-input" type="text" name="search" id="search" placeholder="Поиск по сайту">
-                  <button class="btn btn-icon btn-delete-text" type="button"></button>
+                  <button class="btn btn-icon btn-delete-text" type="reset"></button>
                 </p>
               </form>
             </div>
@@ -74,11 +74,11 @@
               <form  action="https://echo.htmlacademy.ru/courses" method="post">
                 <p class="login-form-item">
                   <label class="visually-hidden" for="email-login">Электронная почта</label>
-                  <input class="main-input" type="email" name="email" id="email-login" placeholder="email@example.com">
+                  <input class="main-input" type="email" name="email" id="email-login" placeholder="email@example.com" required>
                 </p>
                 <p class="login-form-item">
                   <label class="visually-hidden" for="password">Пароль</label>
-                  <input class="main-input" type="password" name="password" id="password" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;">
+                  <input class="main-input" type="password" name="password" id="password" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;" required>
                 </p>
                 <div class="login-form-footer">
                   <button class="btn-login btn btn-secondary" type="submit">Войти</button>
@@ -347,7 +347,7 @@
               <form class="subscribe-form" action="https://echo.htmlacademy.ru/courses" method="post">
                 <p class="subscribe-form-item">
                   <label class="visually-hidden" for="email">Электронная почта</label>
-                  <input class="main-input" type="email" name="email" id="email" placeholder="email@example.com">
+                  <input class="main-input" type="email" name="email" id="email" placeholder="email@example.com" required>
                 </p>
                 <button class="btn btn-secondary" type="submit">Отправить</button>
               </form>
@@ -372,13 +372,13 @@
                     <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Введите желаемую дату доставки</span>
                   </div>
                 </div>
-                <input class="main-input date-input" type="text" name="date" id="date" placeholder="01.04.2020">
+                <input class="main-input date-input" type="text" name="date" id="date" placeholder="01.04.2020" required>
               </div>
               <div class="delivery-form-input phone-input">
                 <div class="delivery-form-label">
                   <label class="main-label main-text-small text-bold" for="phone">Телефон</label>
                 </div>
-                <input class="main-input tel-input" type="tel" name="tel" id="phone" placeholder="+7 800 999-00-00">
+                <input class="main-input tel-input" type="tel" name="tel" id="phone" placeholder="+7 800 999-00-00" required>
               </div>
               <div class="delivery-form-input full-width-column">
                 <div class="delivery-form-label">
@@ -388,7 +388,7 @@
                     <span class="tooltip-text" role="tooltip" id="tooltip-label-address">Введите название улицы, дома и квартиры</span>
                   </div>
                 </div>
-                <input class="main-input address-input" type="text" name="address" id="address" placeholder="ул. Большая Конюшенная, 19/8">
+                <input class="main-input address-input" type="text" name="address" id="address" placeholder="ул. Большая Конюшенная, 19/8" required>
               </div>
               <button class="delivery-form-btn btn btn-secondary full-width-column" type="submit">Отправить</button>
             </form>
@@ -465,11 +465,11 @@
           <form class="feedback-form" action="https://echo.htmlacademy.ru/courses" method="post">
             <div class="feedback-form-item">
               <label class="visually-hidden" for="name">Имя и фамилия</label>
-              <input class="main-input" type="text" name="name" id="name" placeholder="Имя и фамилия">
+              <input class="main-input" type="text" name="name" id="name" placeholder="Имя и фамилия" required>
             </div>
             <div class="feedback-form-item">
               <label class="visually-hidden" for="email-feedback">Электронная почта</label>
-              <input class="main-input" type="email" name="email-feedback" id="email-feedback" placeholder="email@example.com">
+              <input class="main-input" type="email" name="email-feedback" id="email-feedback" placeholder="email@example.com" required>
             </div>
             <div class="feedback-form-item">
               <label for="message" class="visually-hidden">Отзыв</label>
