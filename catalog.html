@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="assets/styles/styles.css">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon.png">
 </head>
-<body>
+<body class="page-strawberry">
   <header class="wrapper main-header catalog-header">
     <nav class="navigation">
       <a class="logo" href="index.html">
@@ -20,6 +20,17 @@
               <path fill-rule="evenodd" clip-rule="evenodd" d="M1.80812 0.195262C1.54777 -0.0650874 1.12566 -0.0650874 0.865306 0.195262C0.604957 0.455612 0.604957 0.877722 0.865306 1.13807L5.52565 5.79842C5.52771 5.80053 5.52979 5.80264 5.53189 5.80474C5.66259 5.93543 5.83404 6.00052 6.00534 6C6.1753 5.9995 6.34511 5.93441 6.47478 5.80474C6.47687 5.80265 6.47894 5.80056 6.48099 5.79845L11.1414 1.13807C11.4017 0.877722 11.4017 0.455612 11.1414 0.195262C10.881 -0.0650874 10.4589 -0.0650874 10.1986 0.195262L6.00334 4.39048L1.80812 0.195262Z" fill="currentColor"/>
             </svg>
           </a>
+          <div class="popover popover-submenu">
+            <div class="popover-content">
+              <ul class="submenu-list">
+                <li><a class="submenu-item submenu-item-new label-text text-bold" href="#">Новинки</a></li>
+                <li><a class="submenu-item submenu-item-current label-text" href="#">Сливочное</a></li>
+                <li><a class="submenu-item label-text" href="#">Щербеты</a></li>
+                <li><a class="submenu-item label-text" href="#">фруктовый лед</a></li>
+                <li><a class="submenu-item label-text" href="#">Мелорин</a></li>
+              </ul>
+            </div>
+          </div>
         </li>
         <li class="navigation-item">
           <a class="navigation-link  main-text-small" href="#">Доставка и оплата</a>
@@ -39,6 +50,17 @@
             <path fill-rule="evenodd" clip-rule="evenodd" d="M2.66329 8.18794C2.66329 5.61061 4.75263 3.52128 7.32996 3.52128C9.90729 3.52128 11.9966 5.61061 11.9966 8.18794C11.9966 9.44522 11.4994 10.5864 10.6909 11.4255C10.6681 11.443 10.6461 11.4623 10.6252 11.4832C10.6043 11.5041 10.585 11.5261 10.5675 11.5489C9.72835 12.3574 8.58722 12.8546 7.32996 12.8546C4.75263 12.8546 2.66329 10.7653 2.66329 8.18794ZM11.0751 12.8759C10.0486 13.697 8.74662 14.1879 7.32996 14.1879C4.01625 14.1879 1.32996 11.5017 1.32996 8.18794C1.32996 4.87423 4.01625 2.18794 7.32996 2.18794C10.6437 2.18794 13.33 4.87423 13.33 8.18794C13.33 9.60463 12.839 10.9066 12.0179 11.9331L14.468 14.3832C14.7284 14.6436 14.7284 15.0657 14.468 15.326C14.2077 15.5864 13.7855 15.5864 13.5252 15.326L11.0751 12.8759Z" fill="currentColor"/>
           </svg>
         </button>
+        <div class="popover popover-search">
+          <div class="popover-content">
+            <form action="https://echo.htmlacademy.ru/courses" method="get">
+              <p class="search-form-item">
+                <label class="visually-hidden" for="search">Поиск по сайту</label>
+                <input class="search-input main-input" type="text" name="search" id="search" placeholder="Поиск по сайту">
+                <button class="btn btn-icon btn-delete-text" type="reset"></button>
+              </p>
+            </form>
+          </div>
+        </div>
       </div>
       <div class="navigation-user-item">
         <a class="navigation-user-link navigation-link-login label-text" href="#">
@@ -46,6 +68,28 @@
             <path fill-rule="evenodd" clip-rule="evenodd" d="M9 2.52461C9 2.15642 9.29848 1.85794 9.66667 1.85794H12.3333C12.8638 1.85794 13.3725 2.06865 13.7475 2.44373C14.1226 2.8188 14.3333 3.32751 14.3333 3.85794V13.1913C14.3333 13.7217 14.1226 14.2304 13.7475 14.6055C13.3725 14.9806 12.8638 15.1913 12.3333 15.1913H9.66667C9.29848 15.1913 9 14.8928 9 14.5246C9 14.1564 9.29848 13.8579 9.66667 13.8579H12.3333C12.5101 13.8579 12.6797 13.7877 12.8047 13.6627C12.9298 13.5377 13 13.3681 13 13.1913V3.85794C13 3.68113 12.9298 3.51156 12.8047 3.38654C12.6797 3.26151 12.5101 3.19127 12.3333 3.19127H9.66667C9.29848 3.19127 9 2.8928 9 2.52461ZM5.86189 4.71987C6.12224 4.45952 6.54435 4.45952 6.8047 4.71987L10.1338 8.04897C10.1509 8.06579 10.1671 8.08353 10.1824 8.1021C10.2142 8.1409 10.2411 8.18246 10.2628 8.22589C10.3079 8.31575 10.3333 8.41721 10.3333 8.52461C10.3333 8.63323 10.3074 8.73579 10.2613 8.8264C10.241 8.86635 10.2164 8.90469 10.1876 8.94072C10.1708 8.96172 10.1527 8.98169 10.1335 9.0005L6.8047 12.3293C6.54435 12.5897 6.12224 12.5897 5.86189 12.3293C5.60154 12.069 5.60154 11.6469 5.86189 11.3865L8.05715 9.19127H1.66667C1.29848 9.19127 1 8.8928 1 8.52461C1 8.15642 1.29848 7.85794 1.66667 7.85794H8.05715L5.86189 5.66268C5.60154 5.40233 5.60154 4.98022 5.86189 4.71987Z" fill="currentColor"/>
           </svg>
           Вход<span class="visually-hidden">Личный кабинет</span></a>
+        <div class="popover popover-login">
+          <div class="popover-content">
+            <h2 class="popover-title head-text-medium">Личный кабинет</h2>
+            <form  action="https://echo.htmlacademy.ru/courses" method="post">
+              <p class="login-form-item">
+                <label class="visually-hidden" for="email-login">Электронная почта</label>
+                <input class="main-input" type="email" name="email" id="email-login" placeholder="email@example.com" required>
+              </p>
+              <p class="login-form-item">
+                <label class="visually-hidden" for="password">Пароль</label>
+                <input class="main-input" type="password" name="password" id="password" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;" required>
+              </p>
+              <div class="login-form-footer">
+                <button class="btn-login btn btn-secondary" type="submit">Войти</button>
+                <div class="login-links">
+                  <a class="login-link label-text" href="#">Забыли пароль?</a>
+                  <a class="login-link label-text" href="#">Регистрация</a>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
       <div class="navigation-user-item">
         <a class="navigation-user-link navigation-link-basket label-text" href="#">
@@ -194,7 +238,7 @@
         <li class="card">
           <a class="card-link" href="#">
             <div class="card-image">
-              <img src="assets/images/catalog-raspberry.png" width="270" height="184" alt="">
+              <img src="assets/images/catalog-raspberry.png" width="270" height="184" alt="Малиновое мороженое.">
             </div>
             <h3 class="card-heading head-text-small text-bold">Малинка</h3>
           </a>
@@ -211,7 +255,7 @@
         <li class="card">
           <a class="card-link" href="#">
             <div class="card-image">
-              <img src="assets/images/catalog-pistachio.png" width="270" height="184" alt="">
+              <img src="assets/images/catalog-pistachio.png" width="270" height="184" alt="Фисташковое мороженое.">
             </div>
             <h3 class="card-heading head-text-small text-bold">Фисташка</h3>
           </a>
@@ -228,7 +272,7 @@
         <li class="card">
           <a class="card-link" href="#">
             <div class="card-image">
-              <img src="assets/images/catalog-blueberry.png" width="270" height="184" alt="">
+              <img src="assets/images/catalog-blueberry.png" width="270" height="184" alt="Черничное мороженое.">
             </div>
             <h3 class="card-heading head-text-small text-bold">Черника</h3>
           </a>
@@ -245,7 +289,7 @@
         <li class="card">
           <a class="card-link" href="#">
             <div class="card-image">
-              <img src="assets/images/catalog-bubblegum.png" width="270" height="184" alt="">
+              <img src="assets/images/catalog-bubblegum.png" width="270" height="184" alt="Ванильное мороженое с посыпкой.">
             </div>
             <h3 class="card-heading head-text-small text-bold">Бабл-гам</h3>
           </a>
@@ -262,7 +306,7 @@
         <li class="card">
           <a class="card-link" href="#">
             <div class="card-image">
-              <img src="assets/images/catalog-blackberry.png" width="270" height="184" alt="">
+              <img src="assets/images/catalog-blackberry.png" width="270" height="184" alt="Ежевичное мороженое.">
             </div>
             <h3 class="card-heading head-text-small text-bold">Ежевика</h3>
           </a>
@@ -279,7 +323,7 @@
         <li class="card">
           <a class="card-link" href="#">
             <div class="card-image">
-              <img src="assets/images/catalog-banana.png" width="270" height="184" alt="">
+              <img src="assets/images/catalog-banana.png" width="270" height="184" alt="Банановое мороженое.">
             </div>
             <h3 class="card-heading head-text-small text-bold">Банан</h3>
           </a>
@@ -296,7 +340,7 @@
         <li class="card">
           <a class="card-link" href="#">
             <div class="card-image">
-              <img src="assets/images/catalog-choco.png" width="270" height="184" alt="">
+              <img src="assets/images/catalog-choco.png" width="270" height="184" alt="Шоколадное мороженое.">
             </div>
             <h3 class="card-heading head-text-small text-bold">Шоколадка</h3>
           </a>
@@ -313,7 +357,7 @@
         <li class="card">
           <a class="card-link" href="#">
             <div class="card-image">
-              <img src="assets/images/catalog-strawberry.png" width="270" height="184" alt="">
+              <img src="assets/images/catalog-strawberry.png" width="270" height="184" alt="Клубничное мороженое.">
             </div>
             <h3 class="card-heading head-text-small text-bold">Клубничка</h3>
           </a>
@@ -330,7 +374,7 @@
         <li class="card">
           <a class="card-link" href="#">
             <div class="card-image">
-              <img src="assets/images/catalog-lemon.png" width="270" height="184" alt="">
+              <img src="assets/images/catalog-lemon.png" width="270" height="184" alt="Лимонный сорбет.">
             </div>
             <h3 class="card-heading head-text-small text-bold">Лимон</h3>
           </a>
@@ -347,7 +391,7 @@
         <li class="card">
           <a class="card-link" href="#">
             <div class="card-image">
-              <img src="assets/images/catalog-menthol.png" width="270" height="184" alt="">
+              <img src="assets/images/catalog-menthol.png" width="270" height="184" alt="Мороженое с ментоловым сиропом.">
             </div>
             <h3 class="card-heading head-text-small text-bold">Ментол</h3>
           </a>
@@ -364,7 +408,7 @@
         <li class="card">
           <a class="card-link" href="#">
             <div class="card-image">
-              <img src="assets/images/catalog-nut.png" width="270" height="184" alt="">
+              <img src="assets/images/catalog-nut.png" width="270" height="184" alt="Фисташковый пломбир с шоколадным сиропом.">
             </div>
             <h3 class="card-heading head-text-small text-bold">Орешек</h3>
           </a>
@@ -381,7 +425,7 @@
         <li class="card">
           <a class="card-link" href="#">
             <div class="card-image">
-              <img src="assets/images/catalog-crem.png" width="270" height="184" alt="">
+              <img src="assets/images/catalog-crem.png" width="270" height="184" alt="Крем-брюле.">
             </div>
             <h3 class="card-heading head-text-small text-bold">Крем-брюле</h3>
           </a>

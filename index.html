@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="assets/styles/styles.css">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon.png">
   </head>
-  <body>
+  <body class="page-strawberry">
     <header class="wrapper main-header">
       <nav class="navigation">
         <a class="logo">
@@ -112,7 +112,9 @@
                     </div>
                   </div>
                   <p class="basket-item-price text-bold">310 &#8381;</p>
-                  <button class="btn btn-icon btn-delete-item" type="button"></button>
+                  <button class="btn btn-icon btn-delete-item" type="button">
+                    <span class="visually-hidden">Удалить товар</span>
+                  </button>
                 </li>
                 <li class="basket-item basket-grid-container">
                   <div class="basket-item-product">
@@ -125,7 +127,9 @@
                     </div>
                   </div>
                   <p class="basket-item-price text-bold">480 &#8381;</p>
-                  <button class="btn btn-icon btn-delete-item" type="button"></button>
+                  <button class="btn btn-icon btn-delete-item" type="button">
+                    <span class="visually-hidden">Удалить товар</span>
+                  </button>
                 </li>
               </ul>
               <div class="basket-footer">
@@ -150,7 +154,7 @@
                 <a href="#" class="btn btn-primary">Заказать</a>
               </div>
               <div class="slider-item-image">
-                <img src="assets/images/icecream-1.png" width="328" height="507" alt="">
+                <img src="assets/images/icecream-1.png" width="328" height="507" alt="Пломбир с клубничным джемом.">
               </div>
             </li>
             <li class="slider-item js-slide">
@@ -160,7 +164,7 @@
                 <a href="#" class="btn btn-primary">Заказать</a>
               </div>
               <div class="slider-item-image">
-                <img src="assets/images/icecream-2.png" width="66" height="150" alt="">
+                <img src="assets/images/icecream-2.png" width="66" height="150" alt="Мороженое со вкусом банана.">
               </div>
             </li>
             <li class="slider-item js-slide">
@@ -170,7 +174,7 @@
                 <a href="#" class="btn btn-primary">Заказать</a>
               </div>
               <div class="slider-item-image">
-                <img src="assets/images/icecream-3.png" width="66" height="150" alt="">
+                <img src="assets/images/icecream-3.png" width="66" height="150" alt="Карамельное мороженое.">
               </div>
             </li>
           </ul>
@@ -191,9 +195,21 @@
         </div>
         <div class="slider-footer">
           <ul class="pagination">
-            <li class="pagination-item"><button class="btn btn-icon btn-pagination btn-pagination-active" type="button"></button></li>
-            <li class="pagination-item"><button class="btn btn-icon btn-pagination" type="button"></button></li>
-            <li class="pagination-item"><button class="btn btn-icon btn-pagination" type="button"></button></li>
+            <li class="pagination-item">
+              <button class="btn btn-icon btn-pagination btn-pagination-active" type="button">
+                <span class="visually-hidden">Первый слайд</span>
+              </button>
+            </li>
+            <li class="pagination-item">
+              <button class="btn btn-icon btn-pagination" type="button">
+                <span class="visually-hidden">Второй слайд</span>
+              </button>
+            </li>
+            <li class="pagination-item">
+              <button class="btn btn-icon btn-pagination" type="button">
+                <span class="visually-hidden">Третий слайд</span>
+              </button>
+            </li>
           </ul>
           <div class="socials">
             <ul class="social-list">
@@ -246,7 +262,7 @@
           <li class="card">
             <a class="card-link" href="#">
               <div class="card-image">
-                <img src="assets/images/catalog-raspberry.png" width="270" height="184" alt="">
+                <img src="assets/images/catalog-raspberry.png" width="270" height="184" alt="Малиновое мороженое.">
               </div>
               <h3 class="card-heading head-text-small text-bold">Малинка</h3>
             </a>
@@ -263,7 +279,7 @@
           <li class="card">
             <a class="card-link" href="#">
               <div class="card-image">
-                <img src="assets/images/catalog-pistachio.png" width="270" height="184" alt="">
+                <img src="assets/images/catalog-pistachio.png" width="270" height="184" alt="Фисташковое мороженое">
               </div>
               <h3 class="card-heading head-text-small text-bold">Фисташка</h3>
             </a>
@@ -280,7 +296,7 @@
           <li class="card">
             <a class="card-link" href="#">
               <div class="card-image">
-                <img src="assets/images/catalog-blueberry.png" width="270" height="184" alt="">
+                <img src="assets/images/catalog-blueberry.png" width="270" height="184" alt="Черничное мороженое.">
               </div>
               <h3 class="card-heading head-text-small text-bold">Черника</h3>
             </a>
@@ -297,7 +313,7 @@
           <li class="card">
             <a class="card-link" href="#">
               <div class="card-image">
-                <img src="assets/images/catalog-bubblegum.png" width="270" height="184" alt="">
+                <img src="assets/images/catalog-bubblegum.png" width="270" height="184" alt="Ванильное мороженое с посыпкой.">
               </div>
               <h3 class="card-heading head-text-small text-bold">Бабл-гам</h3>
             </a>
