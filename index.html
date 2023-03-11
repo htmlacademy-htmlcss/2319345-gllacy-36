@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Глейси</title>
     <link rel="stylesheet" href="assets/styles/styles.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon.png">
   </head>
-  <body>
+  <body class="page-strawberry">
     <header class="wrapper main-header">
       <nav class="navigation">
         <a class="logo">
@@ -55,7 +56,7 @@
                 <p class="search-form-item">
                   <label class="visually-hidden" for="search">Поиск по сайту</label>
                   <input class="search-input main-input" type="text" name="search" id="search" placeholder="Поиск по сайту">
-                  <button class="btn btn-icon btn-delete-text" type="button"></button>
+                  <button class="btn btn-icon btn-delete-text" type="reset"></button>
                 </p>
               </form>
             </div>
@@ -73,11 +74,11 @@
               <form  action="https://echo.htmlacademy.ru/courses" method="post">
                 <p class="login-form-item">
                   <label class="visually-hidden" for="email-login">Электронная почта</label>
-                  <input class="main-input" type="email" name="email" id="email-login" placeholder="email@example.com">
+                  <input class="main-input" type="email" name="email" id="email-login" placeholder="email@example.com" required>
                 </p>
                 <p class="login-form-item">
                   <label class="visually-hidden" for="password">Пароль</label>
-                  <input class="main-input" type="password" name="password" id="password" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;">
+                  <input class="main-input" type="password" name="password" id="password" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;" required>
                 </p>
                 <div class="login-form-footer">
                   <button class="btn-login btn btn-secondary" type="submit">Войти</button>
@@ -111,7 +112,9 @@
                     </div>
                   </div>
                   <p class="basket-item-price text-bold">310 &#8381;</p>
-                  <button class="btn btn-icon btn-delete-item" type="button"></button>
+                  <button class="btn btn-icon btn-delete-item" type="button">
+                    <span class="visually-hidden">Удалить товар</span>
+                  </button>
                 </li>
                 <li class="basket-item basket-grid-container">
                   <div class="basket-item-product">
@@ -124,7 +127,9 @@
                     </div>
                   </div>
                   <p class="basket-item-price text-bold">480 &#8381;</p>
-                  <button class="btn btn-icon btn-delete-item" type="button"></button>
+                  <button class="btn btn-icon btn-delete-item" type="button">
+                    <span class="visually-hidden">Удалить товар</span>
+                  </button>
                 </li>
               </ul>
               <div class="basket-footer">
@@ -145,11 +150,11 @@
             <li class="slider-item js-slide active">
               <div class="slider-item-description">
                 <h3 class="slider-item-heading head-text-extra text-black">Нежный пломбир с&nbsp;клубничным джемом</h3>
-                <p class="slider-item-text main-text-big">Натуральное мороженое из&nbsp;свежих сливок и&nbsp;молока с&nbsp;вкуснейшим клубничным джемом&nbsp;&mdash; это идеальный десерт для всей семьи.</p>
+                <p class="slider-item-text main-text-big">Натуральное мороженое из&nbsp;свежих сливок и&nbsp;молока с&nbsp;вкуснейшим клубничным джемом&nbsp;- это идеальный десерт для всей семьи.</p>
                 <a href="#" class="btn btn-primary">Заказать</a>
               </div>
               <div class="slider-item-image">
-                <img src="assets/images/icecream-1.png" width="328" height="507" alt="">
+                <img src="assets/images/icecream-1.png" width="328" height="507" alt="Пломбир с клубничным джемом.">
               </div>
             </li>
             <li class="slider-item js-slide">
@@ -159,7 +164,7 @@
                 <a href="#" class="btn btn-primary">Заказать</a>
               </div>
               <div class="slider-item-image">
-                <img src="assets/images/icecream-2.png" width="66" height="150" alt="">
+                <img src="assets/images/icecream-2.png" width="66" height="150" alt="Мороженое со вкусом банана.">
               </div>
             </li>
             <li class="slider-item js-slide">
@@ -169,7 +174,7 @@
                 <a href="#" class="btn btn-primary">Заказать</a>
               </div>
               <div class="slider-item-image">
-                <img src="assets/images/icecream-3.png" width="66" height="150" alt="">
+                <img src="assets/images/icecream-3.png" width="66" height="150" alt="Карамельное мороженое.">
               </div>
             </li>
           </ul>
@@ -190,9 +195,21 @@
         </div>
         <div class="slider-footer">
           <ul class="pagination">
-            <li class="pagination-item"><button class="btn btn-icon btn-pagination btn-pagination-active" type="button"></button></li>
-            <li class="pagination-item"><button class="btn btn-icon btn-pagination" type="button"></button></li>
-            <li class="pagination-item"><button class="btn btn-icon btn-pagination" type="button"></button></li>
+            <li class="pagination-item">
+              <button class="btn btn-icon btn-pagination btn-pagination-active" type="button">
+                <span class="visually-hidden">Первый слайд</span>
+              </button>
+            </li>
+            <li class="pagination-item">
+              <button class="btn btn-icon btn-pagination" type="button">
+                <span class="visually-hidden">Второй слайд</span>
+              </button>
+            </li>
+            <li class="pagination-item">
+              <button class="btn btn-icon btn-pagination" type="button">
+                <span class="visually-hidden">Третий слайд</span>
+              </button>
+            </li>
           </ul>
           <div class="socials">
             <ul class="social-list">
@@ -245,7 +262,7 @@
           <li class="card">
             <a class="card-link" href="#">
               <div class="card-image">
-                <img src="assets/images/catalog-raspberry.png" width="270" height="184" alt="">
+                <img src="assets/images/catalog-raspberry.png" width="270" height="184" alt="Малиновое мороженое.">
               </div>
               <h3 class="card-heading head-text-small text-bold">Малинка</h3>
             </a>
@@ -262,7 +279,7 @@
           <li class="card">
             <a class="card-link" href="#">
               <div class="card-image">
-                <img src="assets/images/catalog-pistachio.png" width="270" height="184" alt="">
+                <img src="assets/images/catalog-pistachio.png" width="270" height="184" alt="Фисташковое мороженое">
               </div>
               <h3 class="card-heading head-text-small text-bold">Фисташка</h3>
             </a>
@@ -279,7 +296,7 @@
           <li class="card">
             <a class="card-link" href="#">
               <div class="card-image">
-                <img src="assets/images/catalog-blueberry.png" width="270" height="184" alt="">
+                <img src="assets/images/catalog-blueberry.png" width="270" height="184" alt="Черничное мороженое.">
               </div>
               <h3 class="card-heading head-text-small text-bold">Черника</h3>
             </a>
@@ -296,7 +313,7 @@
           <li class="card">
             <a class="card-link" href="#">
               <div class="card-image">
-                <img src="assets/images/catalog-bubblegum.png" width="270" height="184" alt="">
+                <img src="assets/images/catalog-bubblegum.png" width="270" height="184" alt="Ванильное мороженое с посыпкой.">
               </div>
               <h3 class="card-heading head-text-small text-bold">Бабл-гам</h3>
             </a>
@@ -320,10 +337,10 @@
               <p class="advantages-description">Всё наше мороженое изготавливается на собственном производстве с использованием современного оборудования и проверенных временем технологий.</p>
             </div>
             <div class="advantages-item ingredients">
-              <p class="advantages-description">Закупка ингредиентов производится только у проверенных фермерских хозяйств, с которыми нас связывает долговременное сотрудничество.</p>
+              <p class="advantages-description">Закупка ингредиентов производится только у&nbsp;проверенных фермерских хозяйств, с которыми нас&nbsp;связывает долговременное сотрудничество.</p>
             </div>
             <div class="advantages-item quality">
-              <p class="advantages-description">Для приготовления мороженого используются сливки и молоко высочайшего качества. Все ингредиенты и добавки произведены из натурального сырья.</p>
+              <p class="advantages-description">Для приготовления мороженого используются сливки и молоко высочайшего качества. Все ингредиенты и&nbsp;добавки произведены из натурального сырья.</p>
             </div>
             <div class="advantages-item temperature">
               <p class="advantages-description">Доставка нашего мороженого осуществляется в специальном термопаке, который не даёт мороженому растаять и позволяет сохранить превосходный вкус.</p>
@@ -346,7 +363,7 @@
               <form class="subscribe-form" action="https://echo.htmlacademy.ru/courses" method="post">
                 <p class="subscribe-form-item">
                   <label class="visually-hidden" for="email">Электронная почта</label>
-                  <input class="main-input" type="email" name="email" id="email" placeholder="email@example.com">
+                  <input class="main-input" type="email" name="email" id="email" placeholder="email@example.com" required>
                 </p>
                 <button class="btn btn-secondary" type="submit">Отправить</button>
               </form>
@@ -371,13 +388,13 @@
                     <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Введите желаемую дату доставки</span>
                   </div>
                 </div>
-                <input class="main-input date-input" type="text" name="date" id="date" placeholder="01.04.2020">
+                <input class="main-input date-input" type="text" name="date" id="date" placeholder="01.04.2020" required>
               </div>
               <div class="delivery-form-input phone-input">
                 <div class="delivery-form-label">
                   <label class="main-label main-text-small text-bold" for="phone">Телефон</label>
                 </div>
-                <input class="main-input tel-input" type="tel" name="tel" id="phone" placeholder="+7 800 999-00-00">
+                <input class="main-input tel-input" type="tel" name="tel" id="phone" placeholder="+7 800 999-00-00" required>
               </div>
               <div class="delivery-form-input full-width-column">
                 <div class="delivery-form-label">
@@ -387,7 +404,7 @@
                     <span class="tooltip-text" role="tooltip" id="tooltip-label-address">Введите название улицы, дома и квартиры</span>
                   </div>
                 </div>
-                <input class="main-input address-input" type="text" name="address" id="address" placeholder="ул. Большая Конюшенная, 19/8">
+                <input class="main-input address-input" type="text" name="address" id="address" placeholder="ул. Большая Конюшенная, 19/8" required>
               </div>
               <button class="delivery-form-btn btn btn-secondary full-width-column" type="submit">Отправить</button>
             </form>
@@ -398,7 +415,7 @@
         <h2 class="visually-hidden">Наши контакты</h2>
         <div class="contacts-container">
           <div class="contacts-address">
-            <p class="contacts-text">Адрес главного офиса и офлайн-магазина:</p>
+            <p class="contacts-text">Адрес главного офиса и&nbsp;офлайн-магазина:</p>
             <p class="contacts-heading head-text-small text-bold">наб. реки Карповки,<br>5 лит П, Санкт-Петербург</p>
           </div>
           <div class="contacts-phone">
@@ -464,11 +481,11 @@
           <form class="feedback-form" action="https://echo.htmlacademy.ru/courses" method="post">
             <div class="feedback-form-item">
               <label class="visually-hidden" for="name">Имя и фамилия</label>
-              <input class="main-input" type="text" name="name" id="name" placeholder="Имя и фамилия">
+              <input class="main-input" type="text" name="name" id="name" placeholder="Имя и фамилия" required>
             </div>
             <div class="feedback-form-item">
               <label class="visually-hidden" for="email-feedback">Электронная почта</label>
-              <input class="main-input" type="email" name="email-feedback" id="email-feedback" placeholder="email@example.com">
+              <input class="main-input" type="email" name="email-feedback" id="email-feedback" placeholder="email@example.com" required>
             </div>
             <div class="feedback-form-item">
               <label for="message" class="visually-hidden">Отзыв</label>
