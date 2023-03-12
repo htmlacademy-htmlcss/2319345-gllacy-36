@@ -1715,6 +1715,11 @@ img {
   border: 2px solid #2D3440;
 }
 
+.catalog-input[type="checkbox"]:checked:disabled:hover + .control-mark-checkbox {
+  pointer-events: none;
+  background-color: #2D3440;
+}
+
 .catalog-filter button {
   align-self: flex-end;
   margin-bottom: 16px;
