@@ -1822,7 +1822,8 @@ img {
   display: none;
 }
 
-.navigation-link-basket:hover + .popover-basket {
+.navigation-link-basket:hover + .popover-basket,
+.navigation-link-basket:focus + .popover-basket {
   display: block;
 }
 
@@ -1842,7 +1843,8 @@ img {
   display: none;
 }
 
-.navigation-link-login:hover + .popover-login {
+.navigation-link-login:hover + .popover-login,
+.navigation-link-login:focus + .popover-login {
   display: block;
 }
 
@@ -1852,7 +1854,8 @@ img {
   display: none;
 }
 
-.btn-link:hover + .popover-search {
+.btn-link:hover + .popover-search,
+.btn-link:focus + .popover-search {
   display: block;
 }
 
@@ -1868,7 +1871,8 @@ img {
   display: none;
 }
 
-.navigation-link-catalog:hover + .popover-submenu {
+.navigation-link-catalog:hover + .popover-submenu,
+.navigation-link-catalog:focus + .popover-submenu {
   display: block;
 }
 
